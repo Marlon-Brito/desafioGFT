@@ -1,8 +1,12 @@
 public class Teste {
     public static void main(String[] args) {
-        Ingresso ingresso = new Ingresso();
-        System.out.println(ingresso.getQtdIngressos());
+        // Instanciando um ingresso
+        Ingresso ingresso = new Ingresso("Aventura Épica", 30.00, 10);
+        // Exibindo informações do ingresso
+        System.out.println(ingresso);
+        // Comprando ingressos
         ingresso.comprarIngressos(2);
-        ingresso.exibir(ingresso.getNomeFilme(), ingresso.getPreco(), ingresso.getQtdIngressos());
+        // Exibindo informações do ingresso
+        System.out.println(ingresso);
     }
 }

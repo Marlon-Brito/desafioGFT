@@ -1,8 +1,17 @@
 package exercicio02;
 
-public class Passaro extends Animal {
-    private double envergadura = 1.5;
+public class Passaro extends Animal { // Herdando a classe Animal
+    // Atributos
+    private double envergadura;
 
+    // Construtor
+    public Passaro(String nome, double envergadura) {
+        super(nome);
+        this.envergadura = envergadura;
+    }
+
+    // Métodos
+    // Getters e Setters
     public double getEnvergadura() {
         return this.envergadura;
     }
@@ -11,8 +20,9 @@ public class Passaro extends Animal {
         this.envergadura = envergadura;
     }
 
+    // Sobrescrevendo o método toString
     @Override
-    public void imprimir() {
-        System.out.printf("Nome: %s | Envergadura: %s m", getNome(), envergadura);
+    public String toString() {
+        return "Nome: " + nome + ", Envergadura: " + envergadura;
     }
 }

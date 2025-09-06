@@ -2,11 +2,13 @@ package exercicio02;
 
 public class Teste {
     public static void main(String[] args) {
-        Animal animal = new Animal();
-        Passaro passaro = new Passaro();
-        animal.imprimir();
-        System.out.println();
-        passaro.setNome("Ave");
-        passaro.imprimir();
+        // Instanciando um animal
+        Animal animal = new Animal("Rex");
+        // Instanciando um pássaro
+        Passaro passaro = new Passaro("Águia", 1.5);
+        // Exibindo informações do animal
+        System.out.println(animal);
+        // Exibindo informações do pássaro
+        System.out.println(passaro);
     }
 }

@@ -1,8 +1,16 @@
 package exercicio02;
 
 public class Animal {
-    private String nome = "Rex";
+    // Atributos
+    protected String nome;
 
+    // Construtor
+    public Animal(String nome) {
+        this.nome = nome;
+    }
+
+    // Métodos
+    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -11,7 +19,9 @@ public class Animal {
         this.nome = nome;
     }
 
-    public void imprimir() {
-        System.out.printf("Nome: %s", nome);
+    // Sobrescrevendo o método toString
+    @Override
+    public String toString() {
+        return "Nome: " + nome;
     }
 }
